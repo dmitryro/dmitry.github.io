@@ -1,6 +1,5 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import Reveal from 'reveal.js';
-//import RevealMarkdown from 'reveal.js/plugin/markdown/markdown.js';
 
 @Component({
   selector: 'app-slide',
@@ -21,7 +20,11 @@ export class SlideComponent implements OnInit, AfterViewInit{
       parallaxBackgroundImage: '',
       parallaxBackgroundSize: '',
       parallaxBackgroundHorizontal: 200,
-      parallaxBackgroundVertical: 50
+      parallaxBackgroundVertical: 50,
+      progress: true,
+      transition: 'convex',
+      showNotes: true,
+      pdfMaxPagesPerSlide: 1
     })
     this.updateArrow();
   }
